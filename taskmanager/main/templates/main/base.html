@@ -10,12 +10,15 @@
 </head>
 <body>
 <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-  <h5 class="my-0 mr-md-auto font-weight-normal">Frog Shelter</h5>
+  <h5 class="my-0 mr-md-auto font-weight-normal">Фрогена Шелтер</h5>
   <nav class="my-2 my-md-0 mr-md-3">
-    <a class="p-2 text-dark" href="/">Main frog</a>
-    <a class="p-2 text-dark" href="/about-us">about frog</a>
+    <a class="p-2 text-dark" href="{% url 'home' %}">лягушка</a>
+    <a class="p-2 text-dark" href="{% url 'about' %}">про лягушек</a>
+      <a class="p-2 text-dark" href="{% url 'create' %}">купить лягушек</a>
   </nav>
 </div>
-{% block content %}{% endblock %}
+<div class="container">
+    {% block content %}{% endblock %}
+</div>
 </body>
 </html>
