@@ -1,15 +1,10 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Страница про нас</title>
-</head>
-<body>
+{ extends 'main/base.html' }
 
-<h1>Frog </h1>
-<p>text</p>
-</body>
-</html>
+{ % block title % }
+Страница про нас
+{ % endblock %}
+
+{ % block content % }
+<h1>Страница про нас</h1>
+<p1>Страница про frogs</p1>
+{ % endblock %}
